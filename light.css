@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+body, #app {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    background-color: #e2e8f0;
+    @apply text-slate-500 tracking-wide;
+}
+
+.pad { @apply px-4 py-2; }
+.pad-2 { @apply px-6 py-4; }
+
+.bg-theme { @apply bg-blue-500; }
+.text-theme { @apply text-blue-500 hover:text-blue-700; }
+
+.link-active { @apply text-blue-500 hover:text-blue-700; }
+.link-inactive { @apply hover:text-slate-700; }
+
+.alert-red { @apply bg-red-500; }
+.alert-blue { @apply bg-blue-500; }
+.alert-green { @apply bg-green-500; }
+.alert-yellow { @apply bg-yellow-500; }
+
+.badge-red { @apply text-red-600 bg-red-200; }
+.badge-blue { @apply text-blue-600 bg-blue-200; }
+.badge-dark { @apply text-slate-200 bg-slate-800; }
+.badge-light { @apply text-slate-600 bg-slate-200; }
+.badge-green { @apply text-green-600 bg-green-200; }
+.badge-yellow { @apply text-amber-600 bg-amber-200; }
+
+.btn-md { @apply px-4 py-2; }
+.btn-xs { @apply text-xs px-2 py-1; }
+.btn-sm { @apply text-sm px-3 py-2; }
+
+.btn-red { @apply bg-red-500 active:bg-red-600; }
+.btn-blue { @apply bg-blue-500 active:bg-blue-600; }
+.btn-dark { @apply bg-slate-800 active:bg-slate-900; }
+.btn-light { @apply text-slate-800 bg-slate-200 active:bg-slate-300; }
+.btn-green { @apply bg-green-500 active:bg-green-600; }
+.btn-yellow { @apply bg-amber-500 active:bg-amber-600; }
+
+.card { @apply p-4 bg-white rounded-md shadow-lg; }
